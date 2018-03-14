@@ -8,7 +8,7 @@ body {
 }
 /* Home Page JumboTron */
 #headerContainer{
-    background-image: url(http://interfacelift.com/wallpaper/Daa0ca93/04101_minimalmountains_2880x1800.jpg); 
+    background-image: url(http://interfacelift.com/wallpaper/previews/04101_minimalmountains_672x420.jpg); 
     /* background-size: contain;
     height: 800px;
     max-width: 100%;
@@ -51,6 +51,15 @@ body {
     /* display: block;  */
     transition: .3s background-color;
     margin-right: 3em;
-    margin-left: 3em;
-    
+    margin-left: 3em; 
+}
+
+/* HomePage Photo */
+#homeBandPhoto {
+    margin-top: 65px;
+    margin-left: 30px;
+    max-width: 40%; 
+}
+img.slides{
+    max-width: 99%;
 }
