@@ -1,4 +1,4 @@
-console.log('Justin-Thyme');
+// console.log('Justin-Thyme');
 
 // function printToDom (stringToPrint, divId){
 //     var thingToPrint = document.getElementById('divId');
@@ -6,6 +6,7 @@ console.log('Justin-Thyme');
 // }
 
 // printToDom();
+
 
 /********************* News Array of Objects******************************/
 
@@ -30,7 +31,6 @@ var newsArticle = [
  }
 ];
 
-console.log("news articles", newsArticle);
 
 // Home Page Photo Carousel----Stretch Goal------
 // var slideIndex = 0;
