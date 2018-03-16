@@ -1,11 +1,11 @@
-console.log('Justin-Thyme');
+// console.log('Justin-Thyme');
 
-function printToDom (stringToPrint, divId){
-    var thingToPrint = document.getElementById('divId');
-    thingToPrint.innerHTML += stringToPrint;
-}
+// function printToDom (stringToPrint, divId){
+//     var thingToPrint = document.getElementById('divId');
+//     thingToPrint.innerHTML += stringToPrint;
+// }
 
-printToDom();
+// printToDom();
 
 // Home Page Photo Carousel----Stretch Goal------
 // var slideIndex = 0;

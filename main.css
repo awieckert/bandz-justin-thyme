@@ -63,3 +63,26 @@ body {
 img.slides{
     max-width: 99%;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* AJW Footer */
+
+.ajw-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ajw-footer-item {
+    padding: 2em 1.5em 1em 1.5em;
+}
