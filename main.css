@@ -6,6 +6,28 @@ body {
     background-color: black;
     color: white;
 }
+
+.cw-ul {
+    list-style-type: none; 
+    text-align: center; 
+  }
+  
+  .cw-li {
+    display: inline; 
+    font-size: 30px;
+    font-family: helvetica; 
+    padding-right: 65px; 
+  }
+  
+  .cw-anavbar {
+      text-decoration: none;
+      color: white; 
+  }
+
+  .cw-anavbar:hover {
+    color: silver;
+  }
+
 /* Home Page JumboTron */
 #headerContainer{
     background-image: url(http://interfacelift.com/wallpaper/previews/04101_minimalmountains_672x420.jpg); 
