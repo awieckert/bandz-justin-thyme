@@ -86,3 +86,7 @@ img.slides{
 .ajw-footer-item {
     padding: 2em 1.5em 1em 1.5em;
 }
+
+a {
+    color: inherit;
+}
