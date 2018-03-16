@@ -9,8 +9,6 @@ body {
 
 .cw-ul {
     list-style-type: none; 
-    position: relative;
-    top: 300px;
     text-align: center; 
   }
   
