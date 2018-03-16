@@ -1,11 +1,10 @@
 // console.log('Justin-Thyme');
 
-// function printToDom (stringToPrint, divId){
-//     var thingToPrint = document.getElementById('divId');
-//     thingToPrint.innerHTML += stringToPrint;
-// }
+function printToDom (stringToPrint, divId){
+    var thingToPrint = document.getElementById(divId);
+    thingToPrint.innerHTML += stringToPrint;
+};
 
-// printToDom();
 
 
 /********************* News Array of Objects******************************/
@@ -37,11 +36,19 @@ function newsCrap (newsArray) {
         var newsImg = newsArray[i].imgUrl;
         var newsDescription = newsArray[i].description;
         var newsLink = newsArray[i].link;
+        var newsString = '';
+        newsString += '<div>';
+        newsString += '<h2>'+ newsTitle + '</h2>';
+        newsString += '<img src= >';
+        newsString += '<p>' + newsDescription + '</p>';
+        newsString += '<a>' + newsLink + '</a>';
+        newsString += '</div>';
+        printToDom(newsString, "news-container");
         
     }
 };
 
-newsCrap();
+newsCrap(newsArticle);
 
 
 // Home Page Photo Carousel----Stretch Goal------
