@@ -9,23 +9,24 @@ body {
     font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
 }
 /************* Band-Member Styling *****************/
-.member {
+
+#member {
     margin: auto;
     width: 78%;
     border: 3px solid #73ad210d;
     padding: 10px;
 }
 
-.memberName {
+#memberName {
 padding-top: 46px;
 padding-bottom: 5px;
 }
 
-.position {
+#position {
     padding-bottom: 8px;
 }
 
-.memberList {
+#memberList {
     list-style-type: none;
     float: right;
     padding-right: 107px;
@@ -33,9 +34,12 @@ padding-bottom: 5px;
 
 }
 
-.paraMember {
+#paraMember {
     padding-top: 10px;
 }
+
+
+/************************ Nav Bar *****************************/
 
 .cw-ul {
     list-style-type: none; 
