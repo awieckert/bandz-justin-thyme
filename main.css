@@ -84,6 +84,23 @@ img.slides{
     max-width: 99%;
 }
 
+/* AJW Footer */
+
+.ajw-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ajw-footer-item {
+    padding: 2em 1.5em 1em 1.5em;
+}
+
+a {
+    color: inherit;
+}
+
 /* HomePage Bio */
 #bioContainer {
     max-height: 300px;
@@ -98,4 +115,5 @@ img.slides{
     font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
     max-height: 300px;
     overflow: scroll;
+
 }
