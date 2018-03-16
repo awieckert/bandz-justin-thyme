@@ -49,7 +49,6 @@ body {
     text-decoration: none;
     color: #fff;
     /* display: block;  */
-    transition: .3s background-color;
     margin-right: 3em;
     margin-left: 3em; 
 }
@@ -63,16 +62,6 @@ body {
 img.slides{
     max-width: 99%;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* AJW Footer */
 
@@ -89,4 +78,21 @@ img.slides{
 
 a {
     color: inherit;
+}
+
+/* HomePage Bio */
+#bioContainer {
+    max-height: 300px;
+    max-width: 40%;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    margin-left: 30px;
+    border: 6px, solid, red;
+    font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
+}
+#homeBio {
+    font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
+    max-height: 300px;
+    overflow: scroll;
+
 }
