@@ -22,12 +22,19 @@ padding-bottom: 5px;
 }
 
 .position {
-    padding-bottom: 19px;
+    padding-bottom: 8px;
 }
 
 .memberList {
     list-style-type: none;
+    float: right;
+    padding-right: 107px;
+    padding-top: 20px;
 
+}
+
+.paraMember {
+    padding-top: 10px;
 }
 
 .cw-ul {
