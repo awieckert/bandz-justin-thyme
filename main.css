@@ -6,7 +6,7 @@
 body {
     background-color: black;
     color: white;
-    font-family:'Helvetica', Arial, sans-serif;
+    font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
 }
 /************* Band-Member Styling *****************/
 .member {
@@ -27,7 +27,30 @@ padding-bottom: 5px;
 
 .memberList {
     list-style-type: none;
+
 }
+
+.cw-ul {
+    list-style-type: none; 
+    text-align: center; 
+  }
+  
+  .cw-li {
+    display: inline; 
+    font-size: 30px;
+    font-family: helvetica; 
+    padding-right: 65px; 
+  }
+  
+  .cw-anavbar {
+      text-decoration: none;
+      color: white; 
+  }
+
+  .cw-anavbar:hover {
+    color: silver;
+  }
+
 /* Home Page JumboTron */
 #headerContainer{
     background-image: url(http://interfacelift.com/wallpaper/previews/04101_minimalmountains_672x420.jpg); 
@@ -74,15 +97,31 @@ padding-bottom: 5px;
     margin-right: 3em;
     margin-left: 3em; 
 }
+/* Columns for content------------------------------------------------------*/
+#mainHomeContainer {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+}
+/* Left Column------------------------------------------------------------- */
+
+#leftHomeContainer {
+    flex: 3;
+    margin-top: 80px;
+    /* margin-left: 30px; */
+    margin-bottom: 150px;
+    max-width: 50%;
+}
+
 
 /* HomePage Photo */
 #homeBandPhoto {
-    margin-top: 65px;
-    margin-left: 30px;
-    max-width: 40%; 
+    /* max-width: 85%; */
+    width: 85%;
 }
 img.slides{
-    max-width: 99%;
+    /* max-width: 99%; */
+    width: 99%
 }
 
 /* AJW Footer */
@@ -105,16 +144,22 @@ a {
 /* HomePage Bio */
 #bioContainer {
     max-height: 300px;
-    max-width: 40%;
+    max-width: 85%;
     margin-top: 80px;
-    margin-bottom: 150px;
-    margin-left: 30px;
-    border: 6px, solid, red;
-    font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
 }
 #homeBio {
-    font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
     max-height: 300px;
     overflow: scroll;
+}
+/* Right Column-------------------------------------------------- */
+#homeRightColumn {
+    flex: 3;
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-bottom: 150px;
+}
 
+/* Home Page Video */
+#homeVideocontainer{
+    margin-top: 80px;
 }
