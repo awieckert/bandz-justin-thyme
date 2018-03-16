@@ -2,11 +2,44 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: black;
     color: white;
     font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
 }
+/************* Band-Member Styling *****************/
+
+#member {
+    margin: auto;
+    width: 78%;
+    border: 3px solid #73ad210d;
+    padding: 10px;
+}
+
+#memberName {
+padding-top: 46px;
+padding-bottom: 5px;
+}
+
+#position {
+    padding-bottom: 8px;
+}
+
+#memberList {
+    list-style-type: none;
+    float: right;
+    padding-right: 107px;
+    padding-top: 20px;
+
+}
+
+#paraMember {
+    padding-top: 10px;
+}
+
+
+/************************ Nav Bar *****************************/
 
 .cw-ul {
     list-style-type: none; 
