@@ -18,14 +18,15 @@ body {
 
 .memberName {
 padding-top: 46px;
-padding-left: 82px;
-padding-bottom: 19px;
+padding-bottom: 5px;
+}
+
+.position {
+    padding-bottom: 19px;
 }
 
 .memberList {
     list-style-type: none;
-    padding-top: 18px;
-    padding-left: 68px;
 }
 /* Home Page JumboTron */
 #headerContainer{
