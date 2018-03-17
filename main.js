@@ -122,19 +122,31 @@ var bandMembers = [
 
 // console.log ("bandMembers",bandMembers);
 
+
+
 function memberBand(membersArray){
+        var memName;
+        var memPosition;
+        var memPhoto;
+        var memFavs;
+        var memOne;
+        var memTwo;
+        var memThree;
+        var memInfo;
+        var memberString;
         for (var i = 0; i < membersArray.length; i++) {
-        var memName = membersArray[i].memberName;
-        var memPosition = membersArray[i].positionUrl;
-        var memPhoto = membersArray[i].memberPhoto;
-        var memFavs = membersArray [i].favList;
-        var memOne = membersArray[i].listOne;
-        var memTwo = membersArray[i].listTwo;
-        var memThree = membersArray[i].listThree;
-        var memberString = "";
-        memberString += '<div id="member-main-container">';
+             memName = membersArray[i].memberName;
+             memPosition = membersArray[i].position;
+             memPhoto = membersArray[i].memberPhoto;
+             memFavs = membersArray [i].favList;
+             memOne = membersArray[i].listOne;
+             memTwo = membersArray[i].listTwo;
+             memThree = membersArray[i].listThree;
+             memInfo = membersArray[i].paraMember;
+             memberString = "";
+        memberString += '<div id="member">';
         memberString += '<h2>' + memName + '</h2>';
-        memberString += '<h3>' + memPosition + '</h2>';
+        memberString += '<h3>' + memPosition + '</h3>';
         memberString += `<img id="memberPhoto" src= "${memPhoto}">`;
         memberString += '<ul id="memberList">';
         memberString += '<h3>' + memFavs + '<h3>';
@@ -142,9 +154,10 @@ function memberBand(membersArray){
         memberString += '<li>' + memTwo + '<li>';
         memberString += '<li>' + memThree + '<li>';
         memberString += '</ul>';
-        memberString += `</div>`
+        memberString += '<p id="paraMember">' + memInfo + '<p>';
+        memberString += '</div>';
 
-            printToDom(memberString, "member-container")
+            printToDom(memberString, "member-main-container")
     };
 }
 
