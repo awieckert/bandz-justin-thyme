@@ -1,7 +1,9 @@
 
 function printToDom (stringToPrint, divId){
     var thingToPrint = document.getElementById(divId);
-    thingToPrint.innerHTML += stringToPrint;
+    if(thingToPrint){
+        thingToPrint.innerHTML += stringToPrint;
+    }
 };
 
 /********************* News Array of Objects******************************/
@@ -84,8 +86,8 @@ var bandMembers = [
         favList:  "Favorite Artist",
         listOne:  "The Sonics",
         listTwo:  "The White Stripes",
-        listThree: "The Stoogies" 
-        paraMember:    
+        listThree: "The Stoogies",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"    
     },
     {
         memberName: "Leo",
@@ -94,7 +96,8 @@ var bandMembers = [
         favList:  "Favorite Artist",
         listOne:  "BackStreet Boys",
         listTwo:  "5ive",
-        listThree: "LFO"      
+        listThree: "LFO", 
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
     },
     {
         memberName: "Colin",
@@ -103,7 +106,8 @@ var bandMembers = [
         favList:  "Favorite Artist",
         listOne:  "Savage Garden", 
         listTwo:  "B2K",
-        listThree: "Hanson"     
+        listThree: "Hanson",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
     },
     {
         memberName: "Lola",
@@ -111,9 +115,38 @@ var bandMembers = [
         memberPhoto: "http://placeimg.com/640/480/any",
         favList:  "Favorite Artist",
         listOne:  "Radiohead",
-        listThree: "AC/DC"      
+        listThree: "AC/DC",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"      
     }
 
 ];
 
-console.log ("bandMembers",bandMembers);
+// console.log ("bandMembers",bandMembers);
+
+function memberBand(membersArray){
+        for (var i = 0; i < membersArray.length; i++) {
+        var memName = membersArray[i].memberName;
+        var memPosition = membersArray[i].position;
+        var memPhoto = membersArray[i].memberPhoto;
+        var memFavs = membersArray [i].favList;
+        var memOne = membersArray[i].listOne;
+        var memTwo = membersArray[i].listTwo;
+        var memThree = membersArray[i].listThree;
+        var memberString = "";
+        memberString += '<div id="member-main-container">';
+        memberString += '<h2>' + memName + '</h2>';
+        memberString += '<h3>' + memPosition + '</h2>';
+        memberString += '<img id="memberPhoto" src="http://placeimg.com/640/480/any" width="150" height="150">';
+        memberString += '<ul id="memberList">';
+        memberString += '<h3>' + memFavs + '<h3>';
+        memberString += '<li>' + memOne + '</li>';
+        memberString += '<li>' + memTwo + '<li>';
+        memberString += '<li>' + memThree + '<li>';
+        memberString += '</ul>';
+        memberString += `</div>`
+
+            printToDom(memberString, "member-container")
+    };
+}
+
+memberBand(bandMembers);
