@@ -126,7 +126,7 @@ var bandMembers = [
 function memberBand(membersArray){
         for (var i = 0; i < membersArray.length; i++) {
         var memName = membersArray[i].memberName;
-        var memPosition = membersArray[i].position;
+        var memPosition = membersArray[i].positionUrl;
         var memPhoto = membersArray[i].memberPhoto;
         var memFavs = membersArray [i].favList;
         var memOne = membersArray[i].listOne;
@@ -136,7 +136,7 @@ function memberBand(membersArray){
         memberString += '<div id="member-main-container">';
         memberString += '<h2>' + memName + '</h2>';
         memberString += '<h3>' + memPosition + '</h2>';
-        memberString += '<img id="memberPhoto" src="http://placeimg.com/640/480/any" width="150" height="150">';
+        memberString += `<img id="memberPhoto" src= "${memPhoto}">`;
         memberString += '<ul id="memberList">';
         memberString += '<h3>' + memFavs + '<h3>';
         memberString += '<li>' + memOne + '</li>';
