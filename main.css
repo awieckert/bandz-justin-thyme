@@ -311,7 +311,7 @@ a {
 }
 
 
-/********************************News Styling******************************************/
+/******************************** News Styling******************************************/
 
 
 .newsBox {
@@ -322,22 +322,23 @@ a {
 
 }
 .jr-title {
+    font-family: 'Aguafina Script', cursive;
+    font-size: 60px;
     text-align: center;
     padding: 20px;
-    font-family: 
 }
 
 .jr-newsTextBox{
     padding: 5px 10px;
-    /* background-color: rgba(24, 21, 21, 0.1479); */
+    background-color: rgba(24, 21, 21, 0.59);
 
 }
 
-.newsBox:nth-child(1) p, .newsBox:nth-child(1) a {
+/* .newsBox:nth-child(1) p, .newsBox:nth-child(1) a {
     padding: 5px 10px;
     background-color: rgba(24, 21, 21, 1);
 
-}
+} */
 
 .jr-newsImg {
     margin-bottom: 30px;
@@ -348,5 +349,7 @@ a {
 }
 
 .jr-newsP {
+    font-family: 'Open Sans', sans-serif;
+    
 
 }
