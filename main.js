@@ -63,3 +63,57 @@ newsCrap(newsArticle);
 //     slideThyme[slideIndex-1].style.display = "block"; 
 //     setTimeout(carousel, 2000);
 // }
+
+// Band Members
+
+var bandMembers = [
+    {
+        memberName: "Adam",
+        position: "Lead Vocalist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Mariah Care", 
+        listTwo:  "Brittney Spears",
+        listThree:  "Jessica Simpson",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"
+    },
+    {
+        memberName: "Stix",
+        position: "Guitarist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "The Sonics",
+        listTwo:  "The White Stripes",
+        listThree: "The Stoogies" 
+        paraMember:    
+    },
+    {
+        memberName: "Leo",
+        position: "Drummer",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "BackStreet Boys",
+        listTwo:  "5ive",
+        listThree: "LFO"      
+    },
+    {
+        memberName: "Colin",
+        position: "Bassist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Savage Garden", 
+        listTwo:  "B2K",
+        listThree: "Hanson"     
+    },
+    {
+        memberName: "Lola",
+        position: "Keytarist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Radiohead",
+        listThree: "AC/DC"      
+    }
+
+];
+
+console.log ("bandMembers",bandMembers);
