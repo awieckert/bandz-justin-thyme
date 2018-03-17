@@ -145,8 +145,31 @@ img.slides{
     flex-wrap: wrap;
 }
 
+.ajw-header {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .ajw-footer-item {
     padding: 2em 1.5em 1em 1.5em;
+    transition: all 1s ease;
+}
+
+.ajw-footer-item:hover {
+    transform: scale(1.5);
 }
 
 a {
