@@ -65,6 +65,39 @@ newsCrap(newsArticle);
 //     setTimeout(carousel, 2000);
 // }
 
+
+// AJW Media Albums
+
+var arrayOfAlbums = [
+    {
+        img: "../img/album-in-times.jpg",
+        title: "In Times of Trouble  1983",
+    },
+    {
+        img: "../img/album-t-rex.jpg",
+        title: "My people were fair and had sky in their hair.." + "<br>" + "But now they're content to wear stars on their brows  1968",
+    },
+    {
+        img: "../img/album-robin.jpg",
+        title: "Sandcastles In The Sand  1985",
+    }
+];
+
+function albumsToDom (objectArray, divID){
+    var stringToPrint = "";
+    var currentObject;
+    for(var i = 0; i < objectArray.length; i++){
+        currentObject = objectArray[i];
+        stringToPrint += "<div class='ajw-album'>";
+        stringToPrint += "<img src=" + currentObject.img + ">";
+        stringToPrint += "<h3>" + currentObject.title + "</div>";
+        stringToPrint += "</div>"; 
+    }
+    printToDom(stringToPrint, divID);
+}
+
+albumsToDom(arrayOfAlbums, "ajw-albums-id");
+
 /********************* Tour Array of Objects******************************/
 
 var tourSchedule = [
