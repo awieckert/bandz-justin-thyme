@@ -180,13 +180,23 @@ a {
 /* AJW Media Albums Start */
 
 .ajw-albums-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.ajw-album {
-    
+.ajw-album img {
+    width: 400px;
+    height: 400px;
+}
+
+.ajw-album h3,
+.ajw-album h4 {
+    padding-top: 1em;
 }
 
 /* HomePage Bio */
