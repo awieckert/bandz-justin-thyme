@@ -222,9 +222,30 @@ a {
 #homeVideocontainer{
     margin-top: 80px;
 }
+/* Home Page Tour Section */
 #homeTourContainer{
     margin-top: 80px;
     height: 300px;
+    margin-right: 30px;
+    border: 1px solid white;
+    overflow: scroll;
+}
+
+.lt-jsTourContainer{
+    border: 1px solid white;    
+
+}
+
+.lt-tour {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.lt-tourRowTwo{
+    margin-left: 10px;
+}
+.homeTourButton{
+    float: right;
+    
 }
 
 
