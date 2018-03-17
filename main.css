@@ -175,6 +175,20 @@ a {
     color: inherit;
 }
 
+/* AJW Footer END */
+
+/* AJW Media Albums Start */
+
+.ajw-albums-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ajw-album {
+    
+}
+
 /* HomePage Bio */
 #bioContainer {
     max-height: 300px;
