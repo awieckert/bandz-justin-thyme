@@ -8,6 +8,11 @@ body {
     color: white;
     font-family: "helvetica_neuethinext", Helvetica, Arial, sans-serif;
 }
+
+.main-container {
+    background-image: url(/img/background-img.jpeg);
+    background-size: contain;
+}
 /************* Band-Member Styling *****************/
 
 #member {
@@ -154,12 +159,10 @@ img.slides{
 @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 300%; 
     }
   
     to {
       margin-left: 0%;
-      width: 100%;
     }
   }
 
@@ -188,7 +191,25 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: slideinfromleft;
 }
+
+.ajw-album:nth-child(2){
+    color: black;
+}
+
+@keyframes slideinfromleft {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .ajw-album img {
     width: 400px;
@@ -198,6 +219,21 @@ a {
 .ajw-album h3,
 .ajw-album h4 {
     padding-top: 1em;
+}
+
+/* AJW Media Albums End */
+
+/* AJW Media Videos Start */
+
+.ajw-videos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ajw-video {
+    border-radius: 5px;
 }
 
 /* HomePage Bio */
