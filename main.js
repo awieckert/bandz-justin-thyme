@@ -47,3 +47,81 @@ var newsArticle = [
 //     slideThyme[slideIndex-1].style.display = "block"; 
 //     setTimeout(carousel, 2000);
 // }
+
+/********************* Tour Array of Objects******************************/
+
+var tourSchedule = [
+    {
+      month: "March",
+      day: "18",
+      venue: "SOUTH BY SOUTHWEST (SXSW)",
+      location: "Austin, TX",
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "April",
+      day: "20",
+      venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
+      location:"Indio, CA",
+      ticketLink: "Tickets"
+    },
+    {
+      month: "May",
+      day: "5",
+      venue: "BEALE STREET MUSIC FESTIVAL",
+      location: "Memphis, TN",
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "May",
+      day: "19",
+      venue: "Hangout Music Festival",
+      location: "Gulf Shores, AL",
+      ticketLink: "Tickets"
+    },
+    {
+      month: "June",
+      day: "2",
+      venue: "GOVERNORS BALL",
+      location: "Randall’s Island, NYC", 
+      ticketLink: "Tickets"
+    },
+    {
+      month: "June",
+      day: "9",
+      venue: "BONNAROO",
+      location: "Manchester, TN", 
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "August",
+      day: "4",
+      venue: "LOLLAPALOOZA",
+      location: "Chicago, IL", 
+      ticketLink: "Sold Out"
+    }
+  ];
+
+  function createTourSchedule(tourArray){
+      for (var i = 0; i < tourArray.length; i++){
+          var tourString = ""; 
+        if (tourArray[i]){
+            tourString += '<div>';
+            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
+            tourString += "<h1>" + tourArray[i].venue + "</h1>";
+            tourString += "<h1>" + tourArray[i].location + "</h1>";
+            tourString += "<button>" + tourArray[i].ticketLink + "</button>";
+            tourString += '</div>';   
+        }
+        printToDom(tourString); 
+      }
+  }
+
+  function printToDom (stringToPrint, divId){
+     var thingToPrint = document.getElementById("tour-schedule");
+     thingToPrint.innerHTML += stringToPrint;
+ }
+
+ createTourSchedule(tourSchedule);
+
+ /********************* Ending of Tour Array of Objects******************************/
