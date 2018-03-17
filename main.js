@@ -200,53 +200,53 @@ albumsToDom(arrayOfAlbums, "ajw-albums-id");
 
 var tourSchedule = [
     {
-      month: "March",
+      month: "MARCH",
       day: "18",
       venue: "SOUTH BY SOUTHWEST (SXSW)",
-      location: "Austin, TX",
-      ticketLink: "Sold Out"
+      location: "AUSTIN, TX",
+      ticketLink: "SOLD OUT"
     },
     {
-      month: "April",
+      month: "APRIL",
       day: "20",
       venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
-      location:"Indio, CA",
-      ticketLink: "Tickets"
+      location:"INDIO, CA",
+      ticketLink: "TICKETS"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "5",
       venue: "BEALE STREET MUSIC FESTIVAL",
-      location: "Memphis, TN",
-      ticketLink: "Sold Out"
+      location: "MEMPHIS, TN",
+      ticketLink: "SOLD OUT"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "19",
-      venue: "Hangout Music Festival",
-      location: "Gulf Shores, AL",
-      ticketLink: "Tickets"
+      venue: "HANGOUT MUSIC FESTIVAL",
+      location: "GULF SHORES, AL",
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "2",
       venue: "GOVERNORS BALL",
-      location: "Randall’s Island, NYC", 
-      ticketLink: "Tickets"
+      location: "RANDALL’S ISLAND, NYC", 
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "9",
       venue: "BONNAROO",
-      location: "Manchester, TN", 
-      ticketLink: "Sold Out"
+      location: "MANCHESTER, TN", 
+      ticketLink: "SOLD OUT"
     },
     {
-      month: "August",
+      month: "AUGUST",
       day: "4",
       venue: "LOLLAPALOOZA",
-      location: "Chicago, IL", 
-      ticketLink: "Sold Out"
+      location: "CHICAGO, IL", 
+      ticketLink: "SOLD OUT"
     }
   ];
 
@@ -254,11 +254,11 @@ var tourSchedule = [
       for (var i = 0; i < tourArray.length; i++){
           var tourString = ""; 
         if (tourArray[i]){
-            tourString += '<div>';
-            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
-            tourString += "<h1>" + tourArray[i].venue + "</h1>";
+            tourString += '<div class="cw-tourSchedule">';
+            tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
+            tourString += "<h1>" + tourArray[i].venue + "</h1>"; 
             tourString += "<h1>" + tourArray[i].location + "</h1>";
-            tourString += "<button>" + tourArray[i].ticketLink + "</button>";
+            tourString += "<button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
         }
