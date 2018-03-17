@@ -157,9 +157,8 @@ var tourSchedule = [
           var tourString = ""; 
         if (tourArray[i]){
             tourString += '<div>';
-            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
-            tourString += "<h1>" + tourArray[i].venue + "</h1>";
-            tourString += "<h1>" + tourArray[i].location + "</h1>";
+            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "    " + tourArray[i].venue + "</div>";
+            tourString += "<div>" + tourArray[i].location + "</div>";
             tourString += "<button>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
