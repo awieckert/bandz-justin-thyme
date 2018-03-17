@@ -65,6 +65,104 @@ newsCrap(newsArticle);
 //     setTimeout(carousel, 2000);
 // }
 
+// Band Members
+
+var bandMembers = [
+    {
+        memberName: "Adam",
+        position: "Lead Vocalist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Mariah Care", 
+        listTwo:  "Brittney Spears",
+        listThree:  "Jessica Simpson",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"
+    },
+    {
+        memberName: "Stix",
+        position: "Guitarist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "The Sonics",
+        listTwo:  "The White Stripes",
+        listThree: "The Stoogies",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"    
+    },
+    {
+        memberName: "Leo",
+        position: "Drummer",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "BackStreet Boys",
+        listTwo:  "5ive",
+        listThree: "LFO", 
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
+    },
+    {
+        memberName: "Colin",
+        position: "Bassist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Savage Garden", 
+        listTwo:  "B2K",
+        listThree: "Hanson",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
+    },
+    {
+        memberName: "Lola",
+        position: "Keytarist",
+        memberPhoto: "http://placeimg.com/640/480/any",
+        favList:  "Favorite Artist",
+        listOne:  "Radiohead",
+        listThree: "AC/DC",
+        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"      
+    }
+
+];
+
+// console.log ("bandMembers",bandMembers);
+
+
+
+function memberBand(membersArray){
+        var memName;
+        var memPosition;
+        var memPhoto;
+        var memFavs;
+        var memOne;
+        var memTwo;
+        var memThree;
+        var memInfo;
+        var memberString;
+        for (var i = 0; i < membersArray.length; i++) {
+             memName = membersArray[i].memberName;
+             memPosition = membersArray[i].position;
+             memPhoto = membersArray[i].memberPhoto;
+             memFavs = membersArray [i].favList;
+             memOne = membersArray[i].listOne;
+             memTwo = membersArray[i].listTwo;
+             memThree = membersArray[i].listThree;
+             memInfo = membersArray[i].paraMember;
+             memberString = "";
+        memberString += '<div id="member">';
+        memberString += '<h2>' + memName + '</h2>';
+        memberString += '<h3>' + memPosition + '</h3>';
+        memberString += `<img id="memberPhoto" src= "${memPhoto}">`;
+        memberString += '<ul id="memberList">';
+        memberString += '<h3>' + memFavs + '<h3>';
+        memberString += '<li>' + memOne + '</li>';
+        memberString += '<li>' + memTwo + '<li>';
+        memberString += '<li>' + memThree + '<li>';
+        memberString += '</ul>';
+        memberString += '<p id="paraMember">' + memInfo + '<p>';
+        memberString += '</div>';
+
+            printToDom(memberString, "member-main-container")
+    };
+}
+
+memberBand(bandMembers);
+
 
 // AJW Media Albums
 
@@ -193,3 +291,4 @@ function topThreeDates(topThree){
     }
 }
 topThreeDates(tourSchedule);
+
