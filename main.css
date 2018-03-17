@@ -238,6 +238,30 @@ a {
     border-radius: 5px;
 }
 
+/* AJW Media Video END */
+
+/* AJW Media Merch Start */
+.ajw-merch-item-container {
+    display: flex;
+    justify-content: center;
+    height: 64px;
+}
+
+.ajw-cart-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ajw-cart-container div {
+    align-self: flex-end;
+    padding: 2%;
+}
+
+.ajw-merch-item {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
 /* HomePage Bio */
 #bioContainer {
     max-height: 300px;
