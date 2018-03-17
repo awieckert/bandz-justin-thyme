@@ -193,11 +193,13 @@ a {
     text-align: center;
     animation-duration: 2s;
     animation-name: slideinfromleft;
+
 }
 
 .ajw-album:nth-child(2){
     color: black;
 }
+
 
 @keyframes slideinfromleft {
     from {
