@@ -1,7 +1,8 @@
-
 function printToDom (stringToPrint, divId){
     var thingToPrint = document.getElementById(divId);
-    thingToPrint.innerHTML += stringToPrint;
+    if(thingToPrint){
+        thingToPrint.innerHTML += stringToPrint;
+    }
 };
 
 /********************* News Array of Objects******************************/
@@ -127,16 +128,17 @@ var tourSchedule = [
             tourString += "<h1>" + tourArray[i].venue + "</h1>";
             tourString += "<h1>" + tourArray[i].location + "</h1>";
             tourString += "<button>" + tourArray[i].ticketLink + "</button>";
-            tourString += '</div>';   
+            tourString += '</div>';  
+            printToDom(tourString, "tour-schedule");
         }
-        printToDom(tourString); 
+     
       }
   }
 
-  function printToDom (stringToPrint, divId){
-     var thingToPrint = document.getElementById("tour-schedule");
-     thingToPrint.innerHTML += stringToPrint;
- }
+  //function printToDom (stringToPrint, divId){
+     //var thingToPrint = document.getElementById(divId);
+     //thingToPrint.innerHTML += stringToPrint;
+ //}
 
  createTourSchedule(tourSchedule);
 

@@ -129,12 +129,11 @@ padding-bottom: 5px;
 
 /* HomePage Photo */
 #homeBandPhoto {
-    /* max-width: 85%; */
     width: 85%;
 }
 img.slides{
-    /* max-width: 99%; */
-    width: 99%
+    width: 99%;
+    height: 315px;
 }
 
 /* AJW Footer */
@@ -175,4 +174,14 @@ a {
 /* Home Page Video */
 #homeVideocontainer{
     margin-top: 80px;
+}
+#homeTourContainer{
+    margin-top: 80px;
+    height: 300px;
+}
+
+
+.cw-button {
+  background-color: green; 
+  color: purple; 
 }
