@@ -232,3 +232,32 @@ a {
   background-color: green; 
   color: purple; 
 }
+
+
+/********************************News Styling******************************************/
+
+
+.newsBox {
+    border-bottom: 5px double white;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 25px 140px;
+
+}
+.jr-title {
+    text-align: center;
+    padding: 20px;
+    font-family: 
+}
+
+.jr-newsImg {
+    margin-bottom: 30px;
+    width: 35%;
+    height: 35%;
+    /* height: 100%; */
+
+}
+
+.jr-newsP {
+
+}
