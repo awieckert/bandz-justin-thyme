@@ -244,8 +244,12 @@ a {
     max-width: 85%;
     margin-top: 80px;
 }
+
+#bioContainer h3{
+    text-decoration: underline;
+}
 #homeBio {
-    max-height: 300px;
+    max-height: 200px;
     overflow: scroll;
 }
 /* Right Column-------------------------------------------------- */
@@ -263,15 +267,29 @@ a {
 /* Home Page Tour Section */
 #homeTourContainer{
     margin-top: 80px;
-    height: 300px;
+    height: 200px;
     margin-right: 30px;
     border: 1px solid white;
     overflow: scroll;
 }
 
+#homeTourContainer h3{
+    display: inline-block;
+}
+
 .lt-jsTourContainer{
     border: 1px solid white;    
+}
+.clickHere{
+    display: inline-block;
+    /* position: relative; */
+    margin-left: 160px;
+}
 
+.lt-venue{
+    margin-left: 30px;
+    display: inline;
+    text-decoration: underline;
 }
 
 .lt-tour {
