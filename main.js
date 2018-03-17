@@ -275,4 +275,20 @@ var tourSchedule = [
 
  /********************* Ending of Tour Array of Objects******************************/
 
+// ********************** Home Page Tour print first 3 *******************
+
+function topThreeDates(topThree){
+    for (var l = 0; l < topThree.length; l++){
+        var sampleString = "";
+        if (topThree[l]){
+            sampleString += '<div class="lt-jsTourContainer">';
+            sampleString += "<div class='lt-tour'>" + topThree[l].month + " " + topThree[l].day + " " + "<span class='lt-venue'>"+topThree[l].venue+"</span>" + " " + "<button class='homeTourButton'>" + topThree[l].ticketLink + "</button>" + "</div>";
+            sampleString += "<div class='lt-tourRowTwo'>" + topThree[l].location + "</div>";
+            sampleString += '</div>';  
+            printToDom(sampleString, "homeTourContainer");
+        }
+        
+    }
+}
+topThreeDates(tourSchedule);
 
