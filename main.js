@@ -38,8 +38,10 @@ function newsCrap (newsArray) {
         newsString += `<div class="newsBox">`;
         newsString += '<h2 class= "jr-title">'+ newsTitle + '</h2>';
         newsString += `<img class="jr-newsImg" src= "${newsImg}">`;
+        newsString += `<div class="jr-newsTextBox">`;
         newsString += '<p class= "jr-newsP">' + newsDescription + '</p>';
         newsString += `<a href= "${newsLink}">` + newsLink + `</a>`;
+        newsString += '</div>';
         newsString += `</div>`;
         printToDom(newsString, "news-container");
         

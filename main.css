@@ -286,6 +286,18 @@ a {
     font-family: 
 }
 
+.jr-newsTextBox{
+    padding: 5px 10px;
+    /* background-color: rgba(24, 21, 21, 0.1479); */
+
+}
+
+.newsBox:nth-child(1) p, .newsBox:nth-child(1) a {
+    padding: 5px 10px;
+    background-color: rgba(24, 21, 21, 1);
+
+}
+
 .jr-newsImg {
     margin-bottom: 30px;
     width: 35%;
