@@ -98,6 +98,7 @@ padding-bottom: 5px;
     text-align: center;
     padding: 0;
     margin: 0;
+    /* background-color: #496F7A; */
 }
 
 .homeNavBar li {
@@ -120,6 +121,7 @@ padding-bottom: 5px;
     display: flex;
     justify-content: center;
     align-content: stretch;
+    background-color: black;
 }
 /* Left Column------------------------------------------------------------- */
 
