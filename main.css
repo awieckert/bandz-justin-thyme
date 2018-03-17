@@ -305,9 +305,27 @@ a {
 }
 
 
+/* Tour Page Schedule */
+
+
+#tour-schedule {
+  height: 400px;
+  overflow: scroll;
+  padding-left: 30px; 
+  padding-top: 55px; 
+  margin-bottom: 100px; 
+}
+
+.cw-tourSchedule {
+  padding-left: 30px; 
+  padding-top: 55px;
+
+}
+
 .cw-button {
   background-color: green; 
   color: purple; 
+  background-color: white;
 }
 
 
@@ -334,22 +352,22 @@ a {
 
 }
 
-/* .newsBox:nth-child(1) p, .newsBox:nth-child(1) a {
+.newsBox:nth-child(1) p, .newsBox:nth-child(1) a {
     padding: 5px 10px;
-    background-color: rgba(24, 21, 21, 1);
+    background-color: rgba(24, 21, 21, 0.698);
 
-} */
+}
 
 .jr-newsImg {
     margin-bottom: 30px;
     width: 35%;
     height: 35%;
-    /* height: 100%; */
 
 }
 
 .jr-newsP {
-    font-family: 'Open Sans', sans-serif;
-    
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px; 
+
 
 }
