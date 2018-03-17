@@ -305,7 +305,25 @@ a {
 }
 
 
+/* Tour Page Schedule */
+
+
+#tour-schedule {
+  height: 400px;
+  overflow: scroll;
+  padding-left: 30px; 
+  padding-top: 55px; 
+  margin-bottom: 100px; 
+}
+
+.cw-tourSchedule {
+  padding-left: 30px; 
+  padding-top: 55px;
+
+}
+
 .cw-button {
-  background-color: green; 
-  color: purple; 
+  padding: 10px; 
+  background-color: white; 
+
 }
