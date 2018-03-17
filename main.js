@@ -1,4 +1,3 @@
-
 function printToDom (stringToPrint, divId){
     var thingToPrint = document.getElementById(divId);
     if(thingToPrint){
@@ -150,3 +149,117 @@ function memberBand(membersArray){
 }
 
 memberBand(bandMembers);
+
+
+// AJW Media Albums
+
+var arrayOfAlbums = [
+    {
+        img: "../img/album-in-times.jpg",
+        title: "In Times of Trouble  1983",
+    },
+    {
+        img: "../img/album-t-rex.jpg",
+        title: "My people were fair and had sky in their hair.." + "<br>" + "But now they're content to wear stars on their brows  1968",
+    },
+    {
+        img: "../img/album-robin.jpg",
+        title: "Sandcastles In The Sand  1985",
+    }
+];
+
+function albumsToDom (objectArray, divID){
+    var stringToPrint = "";
+    var currentObject;
+    for(var i = 0; i < objectArray.length; i++){
+        currentObject = objectArray[i];
+        stringToPrint += "<div class='ajw-album'>";
+        stringToPrint += "<img src=" + currentObject.img + ">";
+        stringToPrint += "<h3>" + currentObject.title + "</div>";
+        stringToPrint += "</div>"; 
+    }
+    printToDom(stringToPrint, divID);
+}
+
+albumsToDom(arrayOfAlbums, "ajw-albums-id");
+
+/********************* Tour Array of Objects******************************/
+
+var tourSchedule = [
+    {
+      month: "March",
+      day: "18",
+      venue: "SOUTH BY SOUTHWEST (SXSW)",
+      location: "Austin, TX",
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "April",
+      day: "20",
+      venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
+      location:"Indio, CA",
+      ticketLink: "Tickets"
+    },
+    {
+      month: "May",
+      day: "5",
+      venue: "BEALE STREET MUSIC FESTIVAL",
+      location: "Memphis, TN",
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "May",
+      day: "19",
+      venue: "Hangout Music Festival",
+      location: "Gulf Shores, AL",
+      ticketLink: "Tickets"
+    },
+    {
+      month: "June",
+      day: "2",
+      venue: "GOVERNORS BALL",
+      location: "Randall’s Island, NYC", 
+      ticketLink: "Tickets"
+    },
+    {
+      month: "June",
+      day: "9",
+      venue: "BONNAROO",
+      location: "Manchester, TN", 
+      ticketLink: "Sold Out"
+    },
+    {
+      month: "August",
+      day: "4",
+      venue: "LOLLAPALOOZA",
+      location: "Chicago, IL", 
+      ticketLink: "Sold Out"
+    }
+  ];
+
+  function createTourSchedule(tourArray){
+      for (var i = 0; i < tourArray.length; i++){
+          var tourString = ""; 
+        if (tourArray[i]){
+            tourString += '<div>';
+            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
+            tourString += "<h1>" + tourArray[i].venue + "</h1>";
+            tourString += "<h1>" + tourArray[i].location + "</h1>";
+            tourString += "<button>" + tourArray[i].ticketLink + "</button>";
+            tourString += '</div>';  
+            printToDom(tourString, "tour-schedule");
+        }
+     
+      }
+  }
+
+  //function printToDom (stringToPrint, divId){
+     //var thingToPrint = document.getElementById(divId);
+     //thingToPrint.innerHTML += stringToPrint;
+ //}
+
+ createTourSchedule(tourSchedule);
+
+ /********************* Ending of Tour Array of Objects******************************/
+
+
