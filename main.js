@@ -200,49 +200,49 @@ albumsToDom(arrayOfAlbums, "ajw-albums-id");
 
 var tourSchedule = [
     {
-      month: "March",
+      month: "MARCH",
       day: "18",
       venue: "SOUTH BY SOUTHWEST (SXSW)",
       location: "AUSTIN, TX",
       ticketLink: "TICKETS"
     },
     {
-      month: "April",
+      month: "APRIL",
       day: "20",
       venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
-      location:"Indio, CA",
-      ticketLink: "Tickets"
+      location:"INDIO, CA",
+      ticketLink: "TICKETS"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "5",
       venue: "BEALE STREET MUSIC FESTIVAL",
       location: "MEMPHIS, TN",
       ticketLink: "TICKETS"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "19",
-      venue: "Hangout Music Festival",
-      location: "Gulf Shores, AL",
-      ticketLink: "Tickets"
+      venue: "HANGOUT MUSIC FESTIVAL",
+      location: "GULF SHORES, AL",
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "2",
       venue: "GOVERNORS BALL",
-      location: "Randall’s Island, NYC", 
-      ticketLink: "Tickets"
+      location: "RANDALL’S ISLAND, NYC", 
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "9",
       venue: "BONNAROO",
       location: "MANCHESTER, TN", 
       ticketLink: "TICKETS"
     },
     {
-      month: "August",
+      month: "AUGUST",
       day: "4",
       venue: "LOLLAPALOOZA",
       location: "CHICAGO, IL", 
