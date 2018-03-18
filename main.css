@@ -11,7 +11,10 @@ body {
 
 .main-container {
     background-image: url(/img/background-img.jpeg);
-    background-size: contain;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /************* Band-Member Styling *****************/
 
@@ -237,9 +240,6 @@ a {
 
 }
 
-.ajw-album:nth-child(2){
-    color: black;
-}
 
 
 @keyframes slideinfromleft {
