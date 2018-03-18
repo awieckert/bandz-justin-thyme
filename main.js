@@ -68,51 +68,52 @@ var bandMembers = [
     {
         memberName: "Adam",
         position: "Lead Vocalist",
-        memberPhoto: "http://placeimg.com/640/480/any",
+        memberPhoto: "../img/adam.jpg",
         favList:  "Favorite Artist",
         listOne:  "Mariah Care", 
         listTwo:  "Brittney Spears",
         listThree:  "Jessica Simpson",
-        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"
+        paraMember: "Music is like a dream. One that I cannot hear. ―  Ludwig van Beethoven"
     },
     {
         memberName: "Stix",
         position: "Guitarist",
-        memberPhoto: "http://placeimg.com/640/480/any",
+        memberPhoto: "../img/stix.jpg",
         favList:  "Favorite Artist",
         listOne:  "The Sonics",
         listTwo:  "The White Stripes",
         listThree: "The Stoogies",
-        paraMember: "I think Paris smells not just sweet but melancholy and curious, sometimes sad but always enticing and seductive. She's a city for the all senses, for artists and writers and musicians and dreamers, for fantasies, for long walks and wine and lovers and, yes, for mysteries. -M.J. Rose"
+        paraMember: "I can chase you, and I can catch you, but there is nothing I can do to make you mine. ― Morrissey"
     },
     {
         memberName: "Leo",
         position: "Drummer",
-        memberPhoto: "http://placeimg.com/640/480/any",
+        memberPhoto: "../img/leo.jpg",
         favList:  "Favorite Artist",
         listOne:  "BackStreet Boys",
         listTwo:  "5ive",
         listThree: "LFO", 
-        paraMember: "You gotta remember: we're musicians... we're just crazy people who can't get along sometimes. I've definitely come to the table with my knife in my pocket a couple of times; you know how it is. It's part of being human. Now add fame and money and all that rock and roll craziness to it - we're lucky we don't eat each other in this industry! - Corey Taylor"
+        paraMember: "One good thing about music, when it hits you, you feel no pain. ― Bob Marley"
     },
     {
         memberName: "Colin",
         position: "Bassist",
-        memberPhoto: "http://placeimg.com/640/480/any",
+        memberPhoto: "../img/colin.jpg",
         favList:  "Favorite Artist",
         listOne:  "Savage Garden", 
         listTwo:  "B2K",
         listThree: "Hanson",
-        paraMember: "As musicians and artists, it's important we have an environment - and I guess when I say environment, I really mean the industry, that really nurtures these gifts. Oftentimes, the machine can overlook the need to take care of the people who produce the sounds that have a lot to do with the health and well-being of society. - Lauryn Hill"     
+        paraMember: "Without music, life would be a blank to me.― Jane Austen"     
     },
     {
         memberName: "Lola",
         position: "Keytarist",
-        memberPhoto: "http://placeimg.com/640/480/any",
+        memberPhoto: "../img/lola.jpg",
         favList:  "Favorite Artist",
         listOne:  "Radiohead",
+        listTwo: "Pa-Rappa-Da-Rappa",
         listThree: "AC/DC",
-        paraMember: "There are only so many letters in the alphabet. When I talk to young musicians or authors and they ask for advice, I say, 'You gotta learn all the letters of your own personal alphabet. With music, you need to know all the different kinds of music and everything in and around your given instrument. -David Lee Roth" 
+        paraMember: "Music touches us emotionally, where words alone can’t. ― Johnny Depp" 
     }
 
 ];
@@ -135,7 +136,7 @@ function memberBand(membersArray){
              memName = membersArray[i].memberName;
              memPosition = membersArray[i].position;
              memPhoto = membersArray[i].memberPhoto;
-             memFavs = membersArray [i].favList;
+             memFavs = membersArray [i].favList.toUpperCase();
              memOne = membersArray[i].listOne;
              memTwo = membersArray[i].listTwo;
              memThree = membersArray[i].listThree;
