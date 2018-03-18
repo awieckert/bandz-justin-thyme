@@ -36,10 +36,12 @@ function newsCrap (newsArray) {
         var newsLink = newsArray[i].link;
         var newsString = '';
         newsString += `<div class="newsBox">`;
-        newsString += '<h2>'+ newsTitle + '</h2>';
-        newsString += `<img class="newsPics" src= "${newsImg}">`;
-        newsString += '<p>' + newsDescription + '</p>';
-        newsString += `<a href= "${newsLink}">` + newsLink + `</a>`;
+        newsString +=   '<h1 class= "jr-title">'+ newsTitle + '</h1>';
+        newsString +=   `<img class="jr-newsImg" src= "${newsImg}">`;
+        newsString +=     `<div class="jr-newsTextBox">`;
+        newsString +=       '<p class= "jr-newsP">' + newsDescription + '</p>';
+        newsString +=       `<a href= "${newsLink}">` + newsLink + `</a>`;
+        newsString +=     '</div>';
         newsString += `</div>`;
         printToDom(newsString, "news-container");
         
