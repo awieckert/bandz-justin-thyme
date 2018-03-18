@@ -101,10 +101,6 @@ margin-left: 40px;
 /* Home Page JumboTron */
 #headerContainer{
     background-image: url(http://interfacelift.com/wallpaper/previews/04101_minimalmountains_672x420.jpg); 
-    /* background-size: contain;
-    height: 800px;
-    max-width: 100%;
-    overflow: hidden; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +108,6 @@ margin-left: 40px;
 
 #homePagelogo{
     font-family: 'Aguafina Script', cursive;
-    /* text-align:center; */
     font-size: 4em;
     line-height: 800px;
     display: flex;
@@ -123,10 +118,12 @@ margin-left: 40px;
 /* Home Page Nav Bar */
 .homeNavBar ul {
     list-style: none;
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(#496F7A, black);
     text-align: center;
     padding: 0;
     margin: 0;
+    /* background-color: #496F7A; */
 }
 
 .homeNavBar li {
@@ -140,22 +137,25 @@ margin-left: 40px;
 .homeNavBar a {
     text-decoration: none;
     color: #fff;
-    /* display: block;  */
     margin-right: 3em;
     margin-left: 3em; 
+}
+
+.homeNavBar a:hover{
+    color: silver;
 }
 /* Columns for content------------------------------------------------------*/
 #mainHomeContainer {
     display: flex;
     justify-content: center;
     align-content: stretch;
+    background-color: black;
 }
 /* Left Column------------------------------------------------------------- */
 
 #leftHomeContainer {
     flex: 3;
     margin-top: 80px;
-    /* margin-left: 30px; */
     margin-bottom: 150px;
     max-width: 50%;
 }
@@ -165,11 +165,48 @@ margin-left: 40px;
 #homeBandPhoto {
     width: 85%;
 }
-img.slides{
+/* img.slides{
     width: 99%;
     height: 315px;
+    border-radius: 5%;
+    box-shadow: -3px -3px 70px #496F7A;
+} */
+
+/* SLIDE SHOW------------------------------------------------------------ */
+#photoSlides {
+    position: relative;
+    height: 315px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
 
+.slide {
+    position: absolute;
+    /* left: 0px;
+    top: 0px; */
+    width: 99%;
+    height: 315px;
+    opacity: 0;
+    z-index: 1;        
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+#photoSlides img{
+    width: 99%;
+    height: 315px;
+    border-radius: 5%;
+    box-shadow: -3px -3px 70px #496F7A;
+}
+
+.first {
+    opacity: 1;
+    z-index: 2;
+}
 /* AJW Footer */
 
 .ajw-footer{
@@ -261,10 +298,47 @@ a {
     justify-content: space-evenly;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .ajw-video {
     border-radius: 5px;
+}
+
+/* AJW Media Video END */
+
+/* AJW Media Merch Start */
+.ajw-merch-banner-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.ajw-merch-item-container {
+    display: flex;
+    justify-content: center;
+    height: 64px;
+}
+
+.ajw-cart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.ajw-cart-container div {
+    align-self: flex-end;
+    padding: 2%;
+}
+
+.ajw-merch-item {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.ajw-merch-item-lower {
+    align-self: flex-end;
 }
 
 /* HomePage Bio */
@@ -272,6 +346,7 @@ a {
     max-height: 300px;
     max-width: 85%;
     margin-top: 80px;
+    background: radial-gradient(rgb(51, 48, 48), black);
 }
 
 #bioContainer h3{
@@ -292,26 +367,30 @@ a {
 /* Home Page Video */
 #homeVideocontainer{
     margin-top: 80px;
+    box-shadow: -3px -3px 70px #496F7A;
 }
+
 /* Home Page Tour Section */
 #homeTourContainer{
     margin-top: 80px;
     height: 200px;
     margin-right: 30px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     overflow: scroll;
+    background: radial-gradient(rgb(51, 48, 48), black);
 }
 
 #homeTourContainer h3{
     display: inline-block;
+    padding-bottom: 25px;
 }
 
 .lt-jsTourContainer{
-    border: 1px solid white;    
+    /* border: 1px solid white; */
+    padding-bottom: 30px;
 }
 .clickHere{
     display: inline-block;
-    /* position: relative; */
     margin-left: 160px;
 }
 
@@ -326,20 +405,18 @@ a {
     margin-right: 10px;
 }
 .lt-tourRowTwo{
-    margin-left: 10px;
+    margin-left: 125px;
 }
 .homeTourButton{
     float: right;
     
 }
 
-
 /* Tour Page Schedule */
-
 
 #tour-schedule {
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
   padding-left: 30px; 
   padding-top: 55px; 
   margin-bottom: 100px; 
@@ -354,5 +431,10 @@ a {
 .cw-button {
   padding: 10px; 
   background-color: white; 
-
+  color: black; 
+  font-weight: bold
 }
+
+a .cw-button:hover {
+    background-color: silver;
+  }
