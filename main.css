@@ -69,6 +69,10 @@ padding-bottom: 5px;
     color: silver;
   }
 
+  .cw-navBar {
+      padding-top: 20px; 
+  }
+
 /* Home Page JumboTron */
 #headerContainer{
     background-image: url(http://interfacelift.com/wallpaper/previews/04101_minimalmountains_672x420.jpg); 
