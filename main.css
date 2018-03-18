@@ -18,17 +18,45 @@ body {
 #member {
     margin: auto;
     width: 78%;
-    border: 3px solid #73ad210d;
     padding: 10px;
+    justify-content: space-evenly;
+    text-align: left;
+    animation-duration: 2s;
+    animation-direction: slideIn2;
+    
 }
+
+
+@keyframes slidein2 {
+    from {
+      margin-right: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 #memberName {
 padding-top: 46px;
 padding-bottom: 5px;
+margin-left: 40px;
 }
+
+#memberPhoto {
+    width: 14%;
+    height: 168px;
+    border-radius: 12%;
+    margin-right: 659px;
+    padding-top: 10px;
+}
+
 
 #position {
     padding-bottom: 8px;
+    margin-left: 20px;
 }
 
 #memberList {
@@ -41,6 +69,7 @@ padding-bottom: 5px;
 
 #paraMember {
     padding-top: 10px;
+    background-color: #00000040;
 }
 
 

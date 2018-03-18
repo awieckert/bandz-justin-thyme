@@ -138,7 +138,7 @@ function memberBand(membersArray){
              memName = membersArray[i].memberName;
              memPosition = membersArray[i].position;
              memPhoto = membersArray[i].memberPhoto;
-             memFavs = membersArray [i].favList;
+             memFavs = membersArray [i].favList.toUpperCase();
              memOne = membersArray[i].listOne;
              memTwo = membersArray[i].listTwo;
              memThree = membersArray[i].listThree;
