@@ -204,7 +204,7 @@ var tourSchedule = [
       day: "18",
       venue: "SOUTH BY SOUTHWEST (SXSW)",
       location: "AUSTIN, TX",
-      ticketLink: "SOLD OUT"
+      ticketLink: "TICKETS"
     },
     {
       month: "APRIL",
@@ -218,7 +218,7 @@ var tourSchedule = [
       day: "5",
       venue: "BEALE STREET MUSIC FESTIVAL",
       location: "MEMPHIS, TN",
-      ticketLink: "SOLD OUT"
+      ticketLink: "TICKETS"
     },
     {
       month: "MAY",
@@ -239,14 +239,14 @@ var tourSchedule = [
       day: "9",
       venue: "BONNAROO",
       location: "MANCHESTER, TN", 
-      ticketLink: "SOLD OUT"
+      ticketLink: "TICKETS"
     },
     {
       month: "AUGUST",
       day: "4",
       venue: "LOLLAPALOOZA",
       location: "CHICAGO, IL", 
-      ticketLink: "SOLD OUT"
+      ticketLink: "TICKETS"
     }
   ];
 
@@ -258,7 +258,7 @@ var tourSchedule = [
             tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
             tourString += "<h1>" + tourArray[i].venue + "</h1>"; 
             tourString += "<h1>" + tourArray[i].location + "</h1>";
-            tourString += "<button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
+            tourString += "<a href='https://www.ticketmaster.com/' target='_blank'><button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
         }

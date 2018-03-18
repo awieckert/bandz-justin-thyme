@@ -304,9 +304,7 @@ a {
     
 }
 
-
 /* Tour Page Schedule */
-
 
 #tour-schedule {
   height: 400px;
@@ -325,5 +323,10 @@ a {
 .cw-button {
   padding: 10px; 
   background-color: white; 
-
+  color: black; 
+  font-weight: bold
 }
+
+a .cw-button:hover {
+    background-color: silver;
+  }
