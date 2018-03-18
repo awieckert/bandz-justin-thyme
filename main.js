@@ -36,10 +36,12 @@ function newsCrap (newsArray) {
         var newsLink = newsArray[i].link;
         var newsString = '';
         newsString += `<div class="newsBox">`;
-        newsString += '<h2>'+ newsTitle + '</h2>';
-        newsString += `<img class="newsPics" src= "${newsImg}">`;
-        newsString += '<p>' + newsDescription + '</p>';
-        newsString += `<a href= "${newsLink}">` + newsLink + `</a>`;
+        newsString +=   '<h1 class= "jr-title">'+ newsTitle + '</h1>';
+        newsString +=   `<img class="jr-newsImg" src= "${newsImg}">`;
+        newsString +=     `<div class="jr-newsTextBox">`;
+        newsString +=       '<p class= "jr-newsP">' + newsDescription + '</p>';
+        newsString +=       `<a href= "${newsLink}">` + newsLink + `</a>`;
+        newsString +=     '</div>';
         newsString += `</div>`;
         printToDom(newsString, "news-container");
         
@@ -254,7 +256,7 @@ var tourSchedule = [
             tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
             tourString += "<h1>" + tourArray[i].venue + "</h1>";
             tourString += "<h1>" + tourArray[i].location + "</h1>";
-            tourString += "<a href='https://www.ticketmaster.com/' target='_blank'><button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
+            tourString += "<a href='https://www1.ticketmaster.com/jayz-and-beyonce-otr-ii-nashville-tennessee-08-23-2018/event/1B00546BB10E2680?artistid=781009&majorcatid=10001&minorcatid=3&f_PPL=true&ab=efeat5787v1' target='_blank'><button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
         }
