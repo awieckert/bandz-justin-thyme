@@ -88,7 +88,7 @@ var bandMembers = [
         listOne:  "The Sonics",
         listTwo:  "The White Stripes",
         listThree: "The Stoogies",
-        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"    
+        paraMember: "I think Paris smells not just sweet but melancholy and curious, sometimes sad but always enticing and seductive. She's a city for the all senses, for artists and writers and musicians and dreamers, for fantasies, for long walks and wine and lovers and, yes, for mysteries. -M.J. Rose"
     },
     {
         memberName: "Leo",
@@ -98,7 +98,7 @@ var bandMembers = [
         listOne:  "BackStreet Boys",
         listTwo:  "5ive",
         listThree: "LFO", 
-        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
+        paraMember: "You gotta remember: we're musicians... we're just crazy people who can't get along sometimes. I've definitely come to the table with my knife in my pocket a couple of times; you know how it is. It's part of being human. Now add fame and money and all that rock and roll craziness to it - we're lucky we don't eat each other in this industry! - Corey Taylor"
     },
     {
         memberName: "Colin",
@@ -108,7 +108,7 @@ var bandMembers = [
         listOne:  "Savage Garden", 
         listTwo:  "B2K",
         listThree: "Hanson",
-        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"     
+        paraMember: "As musicians and artists, it's important we have an environment - and I guess when I say environment, I really mean the industry, that really nurtures these gifts. Oftentimes, the machine can overlook the need to take care of the people who produce the sounds that have a lot to do with the health and well-being of society. - Lauryn Hill"     
     },
     {
         memberName: "Lola",
@@ -117,7 +117,7 @@ var bandMembers = [
         favList:  "Favorite Artist",
         listOne:  "Radiohead",
         listThree: "AC/DC",
-        paraMember: "I FELL IN LOVE WITH MUSIC WHEN I WAS 12. I SANG IN THE SHOWER AND IN THE CAR FOR ABOUT 10 YEARS. IT WASN'T UNTIL I PULLED UP TO A RED LIGHT IN MY DARK GREEN 1962 VOLKSWAGON BEETLE IN 2001, THAT I KNEW I HAD THE GIFT. TOM POSSUM OUR FIRST MANAGER JUMPED OUT OF HIS CAR AND ASKED IF I WAS INTERESTED IN STARTING A BAND. I SAID YES, AS HE KNEELED DOWN ON ONE KNEE AWAITING MY RESPONSE. IT WAS FATE. SINCE THEN I HAVE BEEN ROLLIN IN THE DEEP!!"      
+        paraMember: "There are only so many letters in the alphabet. When I talk to young musicians or authors and they ask for advice, I say, 'You gotta learn all the letters of your own personal alphabet. With music, you need to know all the different kinds of music and everything in and around your given instrument. -David Lee Roth" 
     }
 
 ];
@@ -144,7 +144,7 @@ function memberBand(membersArray){
              memOne = membersArray[i].listOne;
              memTwo = membersArray[i].listTwo;
              memThree = membersArray[i].listThree;
-             memInfo = membersArray[i].paraMember;
+             memInfo = membersArray[i].paraMember.toUpperCase();
              memberString = "";
         memberString += '<div id="member">';
         memberString += '<h2>' + memName + '</h2>';
@@ -202,53 +202,53 @@ albumsToDom(arrayOfAlbums, "ajw-albums-id");
 
 var tourSchedule = [
     {
-      month: "MARCH",
+      month: "March",
       day: "18",
       venue: "SOUTH BY SOUTHWEST (SXSW)",
-      location: "AUSTIN, TX",
-      ticketLink: "SOLD OUT"
+      location: "Austin, TX",
+      ticketLink: "Sold Out"
     },
     {
-      month: "APRIL",
+      month: "April",
       day: "20",
       venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
-      location:"INDIO, CA",
-      ticketLink: "TICKETS"
+      location:"Indio, CA",
+      ticketLink: "Tickets"
     },
     {
-      month: "MAY",
+      month: "May",
       day: "5",
       venue: "BEALE STREET MUSIC FESTIVAL",
-      location: "MEMPHIS, TN",
-      ticketLink: "SOLD OUT"
+      location: "Memphis, TN",
+      ticketLink: "Sold Out"
     },
     {
-      month: "MAY",
+      month: "May",
       day: "19",
-      venue: "HANGOUT MUSIC FESTIVAL",
-      location: "GULF SHORES, AL",
-      ticketLink: "TICKETS"
+      venue: "Hangout Music Festival",
+      location: "Gulf Shores, AL",
+      ticketLink: "Tickets"
     },
     {
-      month: "JUNE",
+      month: "June",
       day: "2",
       venue: "GOVERNORS BALL",
-      location: "RANDALL’S ISLAND, NYC", 
-      ticketLink: "TICKETS"
+      location: "Randall’s Island, NYC", 
+      ticketLink: "Tickets"
     },
     {
-      month: "JUNE",
+      month: "June",
       day: "9",
       venue: "BONNAROO",
-      location: "MANCHESTER, TN", 
-      ticketLink: "SOLD OUT"
+      location: "Manchester, TN", 
+      ticketLink: "Sold Out"
     },
     {
-      month: "AUGUST",
+      month: "August",
       day: "4",
       venue: "LOLLAPALOOZA",
-      location: "CHICAGO, IL", 
-      ticketLink: "SOLD OUT"
+      location: "Chicago, IL", 
+      ticketLink: "Sold Out"
     }
   ];
 
@@ -256,11 +256,11 @@ var tourSchedule = [
       for (var i = 0; i < tourArray.length; i++){
           var tourString = ""; 
         if (tourArray[i]){
-            tourString += '<div class="cw-tourSchedule">';
-            tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
-            tourString += "<h1>" + tourArray[i].venue + "</h1>"; 
+            tourString += '<div>';
+            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
+            tourString += "<h1>" + tourArray[i].venue + "</h1>";
             tourString += "<h1>" + tourArray[i].location + "</h1>";
-            tourString += "<button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
+            tourString += "<button>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
         }
