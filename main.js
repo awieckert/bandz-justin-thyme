@@ -50,7 +50,15 @@ newsCrap(newsArticle);
 
 
 // Home Page Photo Carousel----Stretch Goal------
+var jsSlides = document.querySelectorAll('#photoSlides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
 
+function nextSlide() {
+    jsSlides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%jsSlides.length;
+    jsSlides[currentSlide].className = 'slide first';
+}
 
 // Band Members
 
@@ -265,7 +273,7 @@ var tourSchedule = [
 // ********************** Home Page Tour print first 3 *******************
 
 function topThreeDates(topThree){
-    for (var l = 0; l < topThree.length; l++){
+    for (var l = 0; l < 4; l++){
         var sampleString = "";
         if (topThree[l]){
             sampleString += '<div class="lt-jsTourContainer">';
