@@ -338,7 +338,9 @@ a {
 
 
 .newsBox {
-    border-bottom: 5px double white;
+    border-bottom: 8px double white;
+    /* height: 350px;
+    overflow-y: scroll; */
     padding: 10px 5px;
     text-align: center;
     margin: 25px 140px;
@@ -353,7 +355,7 @@ a {
 
 .newsBox:nth-child(1) p {
     padding: 5px 10px;
-    background-color: rgba(24, 21, 21, 0.685);
+    background-color: rgba(24, 21, 21, 0.349);
 
 }
 
@@ -361,14 +363,27 @@ a {
     margin-bottom: 30px;
     width: 35%;
     height: 35%;
-
+    border-radius: 15%;
+    animation-duration: 2s;
+    animation-name: slidefrombottom;
 }
 
 .jr-newsP {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px; 
-  
-
-
+  margin: 5px 10px;
 }
+
+
+@keyframes slidefrombottom {
+    from {
+      margin-top: 100%;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+  }
+
+
