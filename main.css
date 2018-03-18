@@ -232,6 +232,7 @@ a {
     justify-content: space-evenly;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .ajw-video {
@@ -241,6 +242,13 @@ a {
 /* AJW Media Video END */
 
 /* AJW Media Merch Start */
+.ajw-merch-banner-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
 .ajw-merch-item-container {
     display: flex;
     justify-content: center;
@@ -250,6 +258,7 @@ a {
 .ajw-cart-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .ajw-cart-container div {
@@ -260,6 +269,10 @@ a {
 .ajw-merch-item {
     padding-right: 1em;
     padding-left: 1em;
+}
+
+.ajw-merch-item-lower {
+    align-self: flex-end;
 }
 
 /* HomePage Bio */
