@@ -141,7 +141,7 @@ function memberBand(membersArray){
              memberString = "";
         memberString += '<div id="member">';
         memberString += '<h2>' + memName + '</h2>';
-        memberString += '<h3>' + memPosition + '</h3>';
+        memberString += '<h3>' + memPexitosition + '</h3>';
         memberString += `<img id="memberPhoto" src= "${memPhoto}">`;
         memberString += '<ul id="memberList">';
         memberString += '<h3>' + memFavs + '<h3>';
