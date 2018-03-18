@@ -21,29 +21,45 @@ body {
 #member {
     margin: auto;
     width: 78%;
-    border: 3px solid #73ad210d;
     padding: 10px;
+    justify-content: space-evenly;
+    text-align: left;
+    box-shadow: 11px 16px 22px black;
+    margin-bottom: 57px;
+    margin-top: 47px;
 }
 
 #memberName {
 padding-top: 46px;
 padding-bottom: 5px;
+margin-left: 40px;
 }
+
+#memberPhoto {
+    width: 230px;
+    height: 230px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 129px;
+    border-radius: 107%;
+}
+
 
 #position {
     padding-bottom: 8px;
+    margin-left: 20px;
 }
 
 #memberList {
     list-style-type: none;
     float: right;
-    padding-right: 107px;
-    padding-top: 20px;
+    text-align: center;
 
 }
 
 #paraMember {
     padding-top: 10px;
+    /* background-color: #00000040; */
 }
 
 
