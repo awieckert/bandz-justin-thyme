@@ -18,7 +18,7 @@ body {
 }
 /************* Band-Member Styling *****************/
 
-#member {
+.member {
     margin: auto;
     width: 78%;
     padding: 10px;
@@ -35,7 +35,7 @@ padding-bottom: 5px;
 margin-left: 40px;
 }
 
-#memberPhoto {
+.memberPhoto {
     width: 230px;
     height: 230px;
     padding-top: 10px;
@@ -50,15 +50,16 @@ margin-left: 40px;
     margin-left: 20px;
 }
 
-#memberList {
+.memberList {
     list-style-type: none;
     float: right;
     text-align: center;
 
 }
 
-#paraMember {
+.paraMember {
     padding-top: 10px;
+    text-align: center;
     /* background-color: #00000040; */
 }
 
@@ -448,12 +449,6 @@ a .cw-button:hover {
     font-size: 60px;
     text-align: center;
     padding: 20px;
-}
-
-.newsBox:nth-child(1) p {
-    padding: 5px 10px;
-    background-color: rgba(24, 21, 21, 0.349);
-
 }
 
 .jr-newsImg {
