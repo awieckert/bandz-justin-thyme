@@ -50,20 +50,15 @@ newsCrap(newsArticle);
 
 
 // Home Page Photo Carousel----Stretch Goal------
-// var slideIndex = 0;
-// carousel();
+var jsSlides = document.querySelectorAll('#photoSlides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
 
-// function carousel() {
-//     var i;
-//     var slideThyme = document.getElementsByClassName("slides");
-//     for (i = 0; i < x.length; i++) {
-//       slideThyme[i].style.display = "none"; 
-//     }
-//     slideIndex++;
-//     if (slideIndex > slideThyme.length) {slideIndex = 1} 
-//     slideThyme[slideIndex-1].style.display = "block"; 
-//     setTimeout(carousel, 2000);
-// }
+function nextSlide() {
+    jsSlides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%jsSlides.length;
+    jsSlides[currentSlide].className = 'slide first';
+}
 
 // Band Members
 
@@ -278,7 +273,7 @@ var tourSchedule = [
 // ********************** Home Page Tour print first 3 *******************
 
 function topThreeDates(topThree){
-    for (var l = 0; l < topThree.length; l++){
+    for (var l = 0; l < 4; l++){
         var sampleString = "";
         if (topThree[l]){
             sampleString += '<div class="lt-jsTourContainer">';
