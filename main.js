@@ -254,8 +254,8 @@ var tourSchedule = [
       for (var i = 0; i < tourArray.length; i++){
           var tourString = ""; 
         if (tourArray[i]){
-            tourString += '<div>';
-            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
+            tourString += '<div class="cw-tourSchedule">';
+            tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
             tourString += "<h1>" + tourArray[i].venue + "</h1>";
             tourString += "<h1>" + tourArray[i].location + "</h1>";
             tourString += "<a href='https://www.ticketmaster.com/' target='_blank'><button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
