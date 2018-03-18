@@ -52,20 +52,15 @@ newsCrap(newsArticle);
 
 
 // Home Page Photo Carousel----Stretch Goal------
-// var slideIndex = 0;
-// carousel();
+var jsSlides = document.querySelectorAll('#photoSlides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
 
-// function carousel() {
-//     var i;
-//     var slideThyme = document.getElementsByClassName("slides");
-//     for (i = 0; i < x.length; i++) {
-//       slideThyme[i].style.display = "none"; 
-//     }
-//     slideIndex++;
-//     if (slideIndex > slideThyme.length) {slideIndex = 1} 
-//     slideThyme[slideIndex-1].style.display = "block"; 
-//     setTimeout(carousel, 2000);
-// }
+function nextSlide() {
+    jsSlides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%jsSlides.length;
+    jsSlides[currentSlide].className = 'slide first';
+}
 
 // Band Members
 
@@ -202,53 +197,53 @@ albumsToDom(arrayOfAlbums, "ajw-albums-id");
 
 var tourSchedule = [
     {
-      month: "March",
+      month: "MARCH",
       day: "18",
       venue: "SOUTH BY SOUTHWEST (SXSW)",
-      location: "Austin, TX",
-      ticketLink: "Sold Out"
+      location: "AUSTIN, TX",
+      ticketLink: "TICKETS"
     },
     {
-      month: "April",
+      month: "APRIL",
       day: "20",
       venue: "COACHELLA VALLEY MUSIC & ARTS FESTIVAL",
-      location:"Indio, CA",
-      ticketLink: "Tickets"
+      location:"INDIO, CA",
+      ticketLink: "TICKETS"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "5",
       venue: "BEALE STREET MUSIC FESTIVAL",
-      location: "Memphis, TN",
-      ticketLink: "Sold Out"
+      location: "MEMPHIS, TN",
+      ticketLink: "TICKETS"
     },
     {
-      month: "May",
+      month: "MAY",
       day: "19",
-      venue: "Hangout Music Festival",
-      location: "Gulf Shores, AL",
-      ticketLink: "Tickets"
+      venue: "HANGOUT MUSIC FESTIVAL",
+      location: "GULF SHORES, AL",
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "2",
       venue: "GOVERNORS BALL",
-      location: "Randall’s Island, NYC", 
-      ticketLink: "Tickets"
+      location: "RANDALL’S ISLAND, NYC", 
+      ticketLink: "TICKETS"
     },
     {
-      month: "June",
+      month: "JUNE",
       day: "9",
       venue: "BONNAROO",
-      location: "Manchester, TN", 
-      ticketLink: "Sold Out"
+      location: "MANCHESTER, TN", 
+      ticketLink: "TICKETS"
     },
     {
-      month: "August",
+      month: "AUGUST",
       day: "4",
       venue: "LOLLAPALOOZA",
-      location: "Chicago, IL", 
-      ticketLink: "Sold Out"
+      location: "CHICAGO, IL", 
+      ticketLink: "TICKETS"
     }
   ];
 
@@ -256,11 +251,11 @@ var tourSchedule = [
       for (var i = 0; i < tourArray.length; i++){
           var tourString = ""; 
         if (tourArray[i]){
-            tourString += '<div>';
-            tourString += "<div>" + tourArray[i].month + " " + tourArray[i].day + "</div>";
+            tourString += '<div class="cw-tourSchedule">';
+            tourString += "<h1>" + tourArray[i].month + " " + tourArray[i].day + "</h1>";
             tourString += "<h1>" + tourArray[i].venue + "</h1>";
             tourString += "<h1>" + tourArray[i].location + "</h1>";
-            tourString += "<button>" + tourArray[i].ticketLink + "</button>";
+            tourString += "<a href='https://www.ticketmaster.com/' target='_blank'><button class='cw-button'>" + tourArray[i].ticketLink + "</button>";
             tourString += '</div>';  
             printToDom(tourString, "tour-schedule");
         }
@@ -280,7 +275,7 @@ var tourSchedule = [
 // ********************** Home Page Tour print first 3 *******************
 
 function topThreeDates(topThree){
-    for (var l = 0; l < topThree.length; l++){
+    for (var l = 0; l < 4; l++){
         var sampleString = "";
         if (topThree[l]){
             sampleString += '<div class="lt-jsTourContainer">';
