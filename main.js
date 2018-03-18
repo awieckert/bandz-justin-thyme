@@ -118,9 +118,6 @@ var bandMembers = [
 
 ];
 
-// console.log ("bandMembers",bandMembers);
-
-
 
 function memberBand(membersArray){
         var memName;
@@ -142,17 +139,14 @@ function memberBand(membersArray){
              memThree = membersArray[i].listThree;
              memInfo = membersArray[i].paraMember.toUpperCase();
              memberString = "";
-        memberString += '<div id="member">';
+        memberString += '<div class="member">';
         memberString += '<h2>' + memName + '</h2>';
         memberString += '<h3>' + memPosition + '</h3>';
-        memberString += `<img id="memberPhoto" src= "${memPhoto}">`;
-        memberString += '<ul id="memberList">';
+        memberString += `<img class="memberPhoto" src= "${memPhoto}">`;
+        memberString += '<ul id="m' + [i] + '" class="memberList">';
         memberString += '<h3>' + memFavs + '<h3>';
-        memberString += '<li>' + memOne + '</li>';
-        memberString += '<li>' + memTwo + '<li>';
-        memberString += '<li>' + memThree + '<li>';
         memberString += '</ul>';
-        memberString += '<p id="paraMember">' + memInfo + '<p>';
+        memberString += '<p class="paraMember">' + memInfo + '<p>';
         memberString += '</div>';
 
             printToDom(memberString, "member-main-container")
@@ -161,6 +155,62 @@ function memberBand(membersArray){
 
 memberBand(bandMembers);
 
+var favoriteArtists = [
+    "Brittney Spears",
+    "The Sonics",
+    "The White Stripes",
+    "Jessica Simpson",
+    "BackStreet Boys",
+    "The Stoogies",
+    "AC/DC",
+    "5ive",
+    "LFO",
+    "Hanson",
+    "Mariah Care",
+    "Savage Garden",
+    "B2K",
+    "Radiohead",
+];
+
+var membersOfBand = [
+    {
+        name: "Adam",
+        favArtists: [1, 5, 11],
+    },
+    {
+        name: "Stix",
+        favArtists: [3, 2, 13],
+    },
+    {
+        name: "Leo",
+        favArtists: [4, 7, 12],
+    },
+    {
+        name: "Colin",
+        favArtists: [6, 8, 11],
+    },
+    {
+        name: "Lola",
+        favArtists: [10, 9, 0],
+    },
+];
+
+function favoriteArtistsPrinter(members) {
+    var currentObject;
+    var favArtistIndex;
+    for (var i = 0; i < membersOfBand.length; i++) {
+        var stringToPrint = "";
+        currentObject = membersOfBand[i];
+        for (var j = 0; j < currentObject.favArtists.length; j++) {
+            favArtistIndex = currentObject.favArtists[j];
+            stringToPrint += "<li>" + favoriteArtists[favArtistIndex] + "</li>";
+        }
+        var printToDiv = "m" + [i];
+        printToDom(stringToPrint, printToDiv);
+    }
+}
+
+favoriteArtistsPrinter(membersOfBand);
 
 // AJW Media Albums
 
